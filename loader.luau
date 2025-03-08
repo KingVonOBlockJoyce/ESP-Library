@@ -549,7 +549,7 @@ local espLibrary = {
                 objects.boxOutline.Size = size;
                 objects.boxOutline.Position = position;
   
-                objects.boxFill.Visible = show and self.options.boxFill;
+                objects.boxFill.Visible = show and (self.options.boxFill and self.options.boxes);
                 objects.boxFill.Color = color or self.options.boxFillColor;
                 objects.boxFill.Transparency = self.options.boxFillTransparency;
                 objects.boxFill.Size = size;
